@@ -147,3 +147,7 @@ span.highlight {
   display: flex;
   align-items: flex-start; /* Align items to the start of the flex container */
 }
+
+.flex-container > div {
+  flex: 1; /* Ensures the divs take up equal space */
+}
