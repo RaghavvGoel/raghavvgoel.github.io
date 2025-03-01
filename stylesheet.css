@@ -135,7 +135,7 @@ span.highlight {
 }
 
 .hoverZoomLink:hover {
-  transform: scale(1.5); /* Enlarge the image */
+  transform: scale(2.5); /* Enlarge the image */
 }
 
 .underline {
