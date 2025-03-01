@@ -135,5 +135,10 @@ span.highlight {
 }
 
 .hoverZoomLink:hover {
-  transform: scale(1.2); /* Enlarge the image */
+  transform: scale(1.5); /* Enlarge the image */
+}
+
+.underline {
+  border-bottom: 2px solid black; /* Adds an underline */
+  padding-bottom: 5px; /* Adds some space between the text and the underline */
 }
