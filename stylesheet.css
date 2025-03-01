@@ -142,3 +142,8 @@ span.highlight {
   border-bottom: 2px solid black; /* Adds an underline */
   padding-bottom: 5px; /* Adds some space between the text and the underline */
 }
+
+.flex-container {
+  display: flex;
+  align-items: flex-start; /* Align items to the start of the flex container */
+}
