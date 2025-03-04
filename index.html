@@ -16,17 +16,22 @@
           <p style="text-align:center">
             <name>Raghavv Goel</name>
           </p>
-          <p>I am a masters of robotics student at Carnegie Mellon University where I work on control theory, computer vision and RL with application to surgical robotics under the guidance of <a href="https://www.ri.cmu.edu/ri-faculty/howie-choset/">Professor Howie Choset</a> and <a href="https://www.cmu.edu/bme/People/Faculty/profile/jgaleotti.html"> Professor John Galeotti</a>.
+          <p>
+            I am currently a Senior Deep Learning Researcher at Qualcomm AI Research, where I am part of the Efficient LLM team led by <a> Mingu Lee </a> and Chris Lott. Our research is  centered on lossless inference acceleration methods, efficient caching, and the design of efficient architectures for language modeling. Previously, I was involved with Compiler Optimization team briefly under the guidance of Will Zeng and Chris Lott, focusing on designing optimizations for running deep networks on non-GPU devices.
           </p>
           <p>
-            Prior to CMU, I was fortunate to collaborate with <a href="https://sites.google.com/iiitd.ac.in/dr-sayan-basu-roy/home?authuser=0"> Dr. Sayan Basu Roy </a> and <a href="https://eecs.iiserb.ac.in/faculty_profile.php?id=OQ==&lname=c3VqaXQ="> Dr. P. B. Sujit </a> related to adaptive control, parametric uncertainty, and distributed systems during my undergraduate studies at IIIT Delhi, where I also received my department (ECE) gold medals for best academic performance and all-round excellence.
+            I hold an MS in Robotics Research from Carnegie Mellon University (CMU), where my research was directed towards control theory, computer vision, and reinforcement learning with applications in surgical robotics. I had the privilege of conducting my research under the mentorship of <a href="https://www.ri.cmu.edu/ri-faculty/howie-choset/">Professor Howie Choset</a> and <a href="https://www.cmu.edu/bme/People/Faculty/profile/jgaleotti.html"> Professor John Galeotti</a>, and doctors of UPMC. 
           </p>
           <p>
-            I was also part of <a href="https://riss.ri.cmu.edu/"> RISS</a> 2019 program where I collaborated with <a href="http://www.cs.cmu.edu/~sycara/">Professor Katia Sycara </a> on multi-agent task allocation problem.
+            During my undergraduate studies at IIIT Delhi, I collaborated with <a href="https://sites.google.com/iiitd.ac.in/dr-sayan-basu-roy/home?authuser=0"> Dr. Sayan Basu Roy </a> and <a href="https://eecs.iiserb.ac.in/faculty_profile.php?id=OQ==&lname=c3VqaXQ="> Dr. P. B. Sujit </a> on projects involving adaptive control, parametric uncertainty, and multi-agent systems. I was honored with the department's (ECE) gold medals for best academic performance and all-round excellence.
+            I still collaborate with Dr. Sayan for fun! 
+          </p>
+          <p>
+            Additionally, I participated in CMU's <a href="https://riss.ri.cmu.edu/"> RISS</a> 2019 summer program, where I worked under the guidance of <a href="http://www.cs.cmu.edu/~sycara/">Professor Katia Sycara </a> on multi-agent task allocation problems.
           </p>
           <p style="text-align:center">
-            <a href="mailto:raghavvg@cs.cmu.edu">Email</a> &nbsp/&nbsp
-            <a href="data/RaghavvGoelResume.pdf">CV</a> &nbsp/&nbsp
+            <a href="mailto:raghavsyz@gmail.com">Email</a> &nbsp/&nbsp
+            <a href="data/RaghavvGoelResume_ML.pdf">CV</a> &nbsp/&nbsp
             <a href="https://scholar.google.com/citations?user=UcvbFvoAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
             <a href="https://github.com/RaghavvGoel/">Github</a>
           </p>
@@ -39,7 +44,10 @@
         <div style="padding:20px;width:100%;vertical-align:middle">
           <heading>Research</heading>
           <p>
-            I'm interested in coalescing control theory (stability and optimality guarantees), reinforcement learning (data-driven method) and perception (sensing).
+            I am keen on exploring the application of control theory (focusing on stability and optimality guarantees) and reinforcement learning (data-driven methods) to enhance our understanding of large language models. While my current research is dedicated to LLMs, I maintain a strong interest in robotics and stay updated on the latest advancements in the field.
+          </p>
+          <p>
+            Please feel free to reach out if you are interested in collaborating.
           </p>
         </div>
       </div>
@@ -50,39 +58,60 @@
         <div class="flex-container">
           <div style="padding:20px;flex:1;vertical-align:middle">
             <div class="one">
-              <img src="images/raghavv/RUS.jpg" width="160" class="hoverZoomLink">
+              <img src="SPD_MLLM_block_diagram.png" width="160" class="hoverZoomLink">
             </div>
           </div>
           <div style="padding:20px;flex:3;vertical-align:middle">
-            <papertitle>Change</papertitle>
+            <papertitle>On Speculative Decoding for Multimodal Large Language Models</papertitle>
             <br>
-            <strong><i>Raghavv Goel</i></strong>*, FNU Abhimanyu*, Kirtan Patel, John Galeotti, Howie Choset
+            M Gagrani*, <strong><i>R Goel</i></strong>*, W Jeon, J Park, M Lee^, C Lott^
             <br>
-            <em>International Conference on Robotics and Automation (ICRA)</em>, 2022
+            <em>Spotlight (top-4 papers)</em>
             <br>
-            <a href="https://ieeexplore.ieee.org/abstract/document/9812410">paper</a>
+            <em>CVPR Workshop on Efficient Large Vision Models (eVLM)</em>, 2024
+            <br>
+            <a href="https://arxiv.org/pdf/2404.08856">Paper</a>
             <p></p>
-            <p>Scanning unknown surfaces (unknown anatomy) is better with sampling the unknown surface at different points and creating an approximate map of the anatomy and surface curvature guided by an information gain</p>
+            <p>This paper explores the application of speculative decoding to enhance the inference efficiency of multimodal large language models (MLLMs), specifically the LLaVA 7B model. The key contribution is demonstrating that a language-only model can serve as an effective draft model for speculative decoding, achieving significant speedups without the need for image tokens</p>
           </div>
         </div>
         <div class="flex-container">
           <div style="padding:20px;flex:1;vertical-align:middle">
             <div class="one">
-              <img src="images/raghavv/RUS.jpg" width="160" class="hoverZoomLink">
+              <img src="iclr2024_result" width="160" class="hoverZoomLink">
             </div>
           </div>
           <div style="padding:20px;flex:3;vertical-align:middle">
-            <papertitle>change</papertitle>
+            <papertitle>Direct Alignment of Draft Model for Speculative Decoding with Chat-Fine-Tuned LLMs</papertitle>
             <br>
-            <strong><i>Raghavv Goel</i></strong>*, FNU Abhimanyu*, Kirtan Patel, John Galeotti, Howie Choset
+            <strong><i>R Goel</i></strong>, M Gagrani, W Jeon, J Park, M Lee, C Lott
             <br>
-            <em>International Conference on Robotics and Automation (ICRA)</em>, 2022
+            <em>ICLR Workshop on Understanding of Foundational Models</em>, 2024
             <br>
-            <a href="https://ieeexplore.ieee.org/abstract/document/9812410">Paper</a>
+            <a href="https://arxiv.org/abs/2403.00858">Paper</a>
             <p></p>
-            <p>Scanning unknown surfaces (unknown anatomy) is better with sampling the unknown surface at different points and creating an approximate map of the anatomy and surface curvature guided by an information gain</p>
+            <p>This paper proposes a framework for training draft models directly aligned with chat-fine-tuned large language models (LLMs). The key contribution is the introduction of the Llama 2 Chat Drafter 115M, which achieves up to 2.4× speed-up in inference relative to autoregressive decoding, using a novel Total Variation Distance++ (TVD++) loss for improved alignment</p>
+          </div>
+        </div>
+        <div class="flex-container">
+          <div style="padding:20px;flex:1;vertical-align:middle">
+            <div class="one">
+              <img src="RSD_block_diagram.png" width="160" class="hoverZoomLink">
+            </div>
+          </div>
+          <div style="padding:20px;flex:3;vertical-align:middle">
+            <papertitle>Recursive Speculative Decoding: Accelerating LLM Inference via Sampling Without Replacement</papertitle>
+            <br>
+            W Jeon, M Gagrani, <strong><i>R Goel</i></strong>, J Park, M Lee, C Lott
+            <br>
+            <em>ICLR Workshop on LLM Agents</em>, 2024
+            <br>
+            <a href="https://arxiv.org/pdf/2402.14160">Paper</a>
+            <p></p>
+            <p>This paper presents Recursive Speculative Decoding (RSD), a novel tree-based method that samples draft tokens without replacement to maximize diversity and efficiency. The key contribution is the empirical demonstration that RSD outperforms baseline methods in both fixed draft sequence length and fixed computational budget scenarios, significantly accelerating LLM inference</p>
           </div>
         </div>        
+        
         <div style="padding:20px;width:100%;vertical-align:middle">
           <heading class="underline">Robotics, Control Theory and Multi-Agent Systems</heading>
         </div>
