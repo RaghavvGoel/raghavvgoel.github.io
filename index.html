@@ -58,9 +58,63 @@
         <div class="flex-container">
           <div style="padding:20px;flex:1;vertical-align:middle">
             <div class="one">
-              <img src="images/raghavv/SPD_MLLM_block_diagram.png" width="160" class="hoverZoomLink">
+              <img src="images/raghavv/draft-vocab-trimming-with-standard.png" width="160" class="hoverZoomLink">
             </div>
           </div>
+          <div style="padding:20px;flex:3;vertical-align:middle">
+            <papertitle>VocabTrim: Vocabulary Pruning for Efficient Speculative Decoding in LLMs</papertitle>
+            <br>
+            <strong><i>R Goel</i></strong>, S Agrawal, M Gagrani, J Park, Y Zao, H Zhang, Y Yang, X Yuan, J Lu, M Lee^, C Lott^
+            <br>
+            <em>ICML Workshop on Efficient Systems for Foundational Models (ES-FOMO)</em>, 2025
+            <br>
+            <a href="https://arxiv.org/abs/2506.22694">Paper</a>
+            <p></p>
+            <p>Speculative decoding (SpD) speeds up LLM inference by using smaller draft models to propose token sequences, which are then verified by a larger base model. VOCABTRIM introduces a training-free method to reduce the overhead of drafting by pruning the vocabulary used during draft generation. By retaining only the most frequently accepted tokens from the target model, VOCABTRIM significantly reduces memory-bound latency—especially beneficial for edge devices. Despite a slight drop in acceptance rate, it achieves up to 16% speed-up on Llama-3.2-3B-Instruct in Spec-Bench, making it a practical optimization for real-world deployment.</p>
+          </div>
+        </div>
+        <div class="flex-container">
+          <div style="padding:20px;flex:1;vertical-align:middle">
+            <div class="one">
+              <img src="images/raghavv/caote_block_diagram.png" width="160" class="hoverZoomLink">
+            </div>
+          </div>
+          <div style="padding:20px;flex:3;vertical-align:middle">
+            <papertitle>CAOTE: KV Cache Eviction for LLMs via Attention Output Error-Based Token Selection</papertitle>
+            <br>
+            <strong><i>R Goel</i></strong>, J Park, M Gagrani, D Jones, M Morse, H Langston, M Lee^, C Lott^
+            <!-- <br>
+            <em>CVPR Workshop on Efficient Large Vision Models (eVLM)</em>, 2024 -->
+            <br>
+            <a href="https://arxiv.org/abs/2504.14051">Paper</a>
+            <p></p>
+            <p>CAOTE introduces a principled token eviction strategy for long-context LLMs that balances memory efficiency with inference quality. Unlike prior methods that rely solely on attention scores, CAOTE estimates each token's contribution to the attention output using both attention weights and value vectors. This hybrid metric allows CAOTE to explicitly optimize for eviction error, ensuring that removed tokens minimally impact model predictions. The method improves latency and downstream task accuracy, and also serves as a meta-heuristic that enhances existing eviction strategies across diverse models and tasks.</p>
+          </div>
+        </div>
+        <div class="flex-container">
+          <div style="padding:20px;flex:1;vertical-align:middle">
+            <div class="one">
+              <img src="images/raghavv/keydiff_diagram.jpeg" width="160" class="hoverZoomLink">
+            </div>
+          </div>        
+          <div style="padding:20px;flex:3;vertical-align:middle">
+            <papertitle>KeyDiff: Key Similarity-Based KV Cache Eviction for Long-Context LLM Inference</papertitle>
+            <br>
+            J park, D Jone, M Morse, <strong><i>R Goel</i></strong>, M Lee^, C Lott^
+            <!-- <br>
+            <em>CVPR Workshop on Efficient Large Vision Models (eVLM)</em>, 2024 -->
+            <br>
+            <a href="https://arxiv.org/abs/2504.15364">Paper</a>
+            <p></p>
+            <p>KeyDiff introduces a training-free cache eviction method based on key similarity, enabling efficient long-context inference in resource-constrained environments. By identifying geometrically distinctive keys that correlate with high attention scores, KeyDiff retains the most impactful tokens without relying on attention mechanisms—making it compatible with optimized attention implementations like FlashAttention. It achieves near-baseline performance with ~23% KV cache reduction and up to 30% latency reduction, validated across Llama and Qwen models on LongBench and Math500.</p>
+          </div>
+        </div>
+        <div class="flex-container">
+          <div style="padding:20px;flex:1;vertical-align:middle">
+            <div class="one">
+              <img src="images/raghavv/SPD_MLLM_block_diagram.png" width="160" class="hoverZoomLink">
+            </div>
+          </div>          
           <div style="padding:20px;flex:3;vertical-align:middle">
             <papertitle>On Speculative Decoding for Multimodal Large Language Models</papertitle>
             <br>
