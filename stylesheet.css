@@ -151,3 +151,28 @@ span.highlight {
 .flex-container > div {
   flex: 1; /* Ensures the divs take up equal space */
 }
+
+#site-nav {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 8px 20px;
+  z-index: 100;
+  display: flex;
+  gap: 24px;
+}
+
+#site-nav a {
+  font-size: 13px;
+  color: #1772d0;
+  text-decoration: none;
+}
+
+#site-nav a:hover {
+  color: #f09228;
+}
+
+.section-anchor {
+  scroll-margin-top: 40px;
+}

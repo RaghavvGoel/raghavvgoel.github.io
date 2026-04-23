@@ -1,0 +1,14 @@
+[
+  {
+    "topic": "Control theory and RL as lenses for understanding LLMs",
+    "body": "I am keen on exploring the application of control theory (focusing on stability and optimality guarantees) and reinforcement learning (data-driven methods) to enhance our understanding of large language models. While my current research is dedicated to LLMs, I maintain a strong interest in robotics and stay updated on the latest advancements in the field. Please feel free to reach out if you are interested in collaborating."
+  },
+  {
+    "topic": "Diffusion LLMs and inference efficiency",
+    "body": "Diffusion-based language models are a genuinely interesting alternative to autoregressive generation, but inference efficiency is still an open problem. I've been thinking about how speculative decoding principles (draft-verify) can be adapted to continuous or masked diffusion, where the notion of a 'draft' is less obvious. The Spiffy and ConFu work are early steps here, but there's much more to explore at the intersection of the two paradigms."
+  },
+  {
+    "topic": "Combining VLAs with trajectory optimization and adaptive control",
+    "body": "Vision-Language-Action models are increasingly capable at high-level task planning, but they largely sidestep the guarantees that classical trajectory optimization and adaptive control provide — stability, constraint satisfaction, robustness to parametric uncertainty. I'm interested in how these two worlds can be combined: using VLAs to specify goals and priors while letting principled control methods handle execution, especially in settings with dynamic or partially unknown environments."
+  }
+]

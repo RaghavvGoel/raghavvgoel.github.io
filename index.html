@@ -11,7 +11,7 @@
 <body>
   <div style="width:100%;max-width:800px;margin-right:auto;margin-left:auto;">
     <div style="padding:0px">
-      <div class="flex-container">
+      <div class="flex-container" style="align-items:center;">
         <div style="padding:2.5%;flex:3;vertical-align:middle">
           <p style="text-align:center">
             <name>Raghavv Goel</name>
@@ -31,7 +31,7 @@
           </p>
           <p style="text-align:center">
             <a href="mailto:raghavsyz@gmail.com">Email</a> &nbsp/&nbsp
-            <a href="data/RaghavvGoelResume_ML.pdf">CV</a> &nbsp/&nbsp
+            <a href="data/RaghavvGoelResume_Mar_2026.pdf">CV</a> &nbsp/&nbsp
             <a href="https://scholar.google.com/citations?user=33SiCW8AAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
             <a href="https://github.com/RaghavvGoel/">Github</a>
           </p>
@@ -40,20 +40,60 @@
           <a href="images/raghavvgoel.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/raghavvgoel.png"></a>
         </div>
       </div>
-      <div style="width:100%;margin-right:auto;margin-left:auto;">
+      <nav id="site-nav">
+        <a href="#thoughts">Thoughts</a>
+        <a href="#llms">LLMs</a>
+        <a href="#dllms">dLLMs</a>
+        <a href="#robotics">Robotics</a>
+        <a href="#patents">Patents</a>
+      </nav>
+      <div id="updates" class="section-anchor" style="width:100%;margin-right:auto;margin-left:auto;">
         <div style="padding:20px;width:100%;vertical-align:middle">
-          <heading>Research</heading>
-          <p>
-            I am keen on exploring the application of control theory (focusing on stability and optimality guarantees) and reinforcement learning (data-driven methods) to enhance our understanding of large language models. While my current research is dedicated to LLMs, I maintain a strong interest in robotics and stay updated on the latest advancements in the field.
-          </p>
-          <p>
-            Please feel free to reach out if you are interested in collaborating.
-          </p>
+          <heading>Updates</heading>
+          <ul id="updates-list" style="padding-left:20px;margin-top:8px;"></ul>
         </div>
       </div>
-      <div style="width:100%;margin-right:auto;margin-left:auto;">
+      <div id="thoughts" class="section-anchor" style="width:100%;margin-right:auto;margin-left:auto;">
+        <div style="padding:20px;width:100%;vertical-align:middle">
+          <heading>What I'm thinking about</heading>
+          <div id="thoughts-list" style="margin-top:12px;"></div>
+        </div>
+      </div>
+      <div id="llms" class="section-anchor" style="width:100%;margin-right:auto;margin-left:auto;">
         <div style="padding:20px;width:100%;vertical-align:middle">
           <heading class="underline">Efficient LLMs</heading>
+        </div>
+        <div class="flex-container">
+          <div style="padding:20px;flex:1;vertical-align:middle">
+            <div class="one"><img src="images/raghavv/training-free-MTP.png" width="160" class="hoverZoomLink"></div>
+          </div>
+          <div style="padding:20px;flex:3;vertical-align:middle">
+            <papertitle>Efficient Training-Free Multi-Token Prediction via Embedding-Space Probing</papertitle>
+            <br>
+            <strong><i>R Goel</i></strong>, M Gagrani, M Lee, C Lott
+            <br>
+            <em>arXiv preprint</em>, 2026
+            <br>
+            <a href="https://arxiv.org/abs/2603.17942">Paper</a>
+            <p></p>
+            <p>Proposes a training-free method for multi-token prediction by probing the model's embedding space, enabling faster inference through simultaneous prediction of multiple future tokens without any fine-tuning. Outperforms lookahead decoding with <strong>12–17% improvement in average acceptance length and 6–15% improvement in wall-time speedup</strong>.</p>
+          </div>
+        </div>
+        <div class="flex-container">
+          <div style="padding:20px;flex:1;vertical-align:middle">
+            <div class="one"><img src="images/raghavv/conFu.png" width="160" class="hoverZoomLink"></div>
+          </div>
+          <div style="padding:20px;flex:3;vertical-align:middle">
+            <papertitle>ConFu: Contemplate the Future for Better Speculative Sampling</papertitle>
+            <br>
+            Z Qin*, <strong><i>R Goel*</i></strong>, M Gagrani, R Garrepalli, M Lee, Y Sun
+            <br>
+            <em>ICLR Workshop on Latent &amp; Implicit Thinking – Going Beyond CoT Reasoning</em>, 2026
+            <br>
+            <a href="https://arxiv.org/abs/2603.08899">Paper</a>
+            <p></p>
+            <p>Introduces a speculative sampling method that conditions draft generation on contemplated future context, improving acceptance rates and overall throughput in LLM inference. <strong>ConFu outperforms Eagle3 by 8–11% on Llama 3 models and by ~20% on Qwen3-4B.</strong></p>
+          </div>
         </div>
         <div class="flex-container">
           <div style="padding:20px;flex:1;vertical-align:middle">
@@ -83,8 +123,8 @@
             <papertitle>CAOTE: KV Cache Eviction for LLMs via Attention Output Error-Based Token Selection</papertitle>
             <br>
             <strong><i>R Goel</i></strong>, J Park, M Gagrani, D Jones, M Morse, H Langston, M Lee^, C Lott^
-            <!-- <br>
-            <em>CVPR Workshop on Efficient Large Vision Models (eVLM)</em>, 2024 -->
+            <br>
+            <em>ICLR Workshop on MemAgents</em>, 2026
             <br>
             <a href="https://arxiv.org/abs/2504.14051">Paper</a>
             <p></p>
@@ -101,8 +141,8 @@
             <papertitle>KeyDiff: Key Similarity-Based KV Cache Eviction for Long-Context LLM Inference</papertitle>
             <br>
             J park, D Jone, M Morse, <strong><i>R Goel</i></strong>, M Lee^, C Lott^
-            <!-- <br>
-            <em>CVPR Workshop on Efficient Large Vision Models (eVLM)</em>, 2024 -->
+            <br>
+            <em>NeurIPS</em>, 2025
             <br>
             <a href="https://arxiv.org/abs/2504.15364">Paper</a>
             <p></p>
@@ -120,7 +160,7 @@
             <br>
             M Gagrani*, <strong><i>R Goel</i></strong>*, W Jeon, J Park, M Lee^, C Lott^
             <br>
-            <em>Spotlight (top-4 papers)</em>
+            <em>Oral (top-4 papers)</em>
             <br>
             <em>CVPR Workshop on Efficient Large Vision Models (eVLM)</em>, 2024
             <br>
@@ -164,9 +204,47 @@
             <p></p>
             <p>This paper presents Recursive Speculative Decoding (RSD), a novel tree-based method that samples draft tokens without replacement to maximize diversity and efficiency. The key contribution is the empirical demonstration that RSD outperforms baseline methods in both fixed draft sequence length and fixed computational budget scenarios, significantly accelerating LLM inference</p>
           </div>
-        </div>        
-        
-        <div style="padding:20px;width:100%;vertical-align:middle">
+        </div>
+
+        <div id="dllms" class="section-anchor" style="padding:20px;width:100%;vertical-align:middle">
+          <heading class="underline">Efficient dLLMs</heading>
+        </div>
+        <div class="flex-container">
+          <div style="padding:20px;flex:1;vertical-align:middle">
+            <div class="one"><img src="images/raghavv/skip-to-good-part.png" width="160" class="hoverZoomLink"></div>
+          </div>
+          <div style="padding:20px;flex:3;vertical-align:middle">
+            <papertitle>Skip to the Good Part: Representation Structure &amp; Inference-Time Layer Skipping in Diffusion vs. Autoregressive LLMs</papertitle>
+            <br>
+            <strong><i>R Goel*</i></strong>, R Garrepalli*, S Agrawal, C Lott, M Lee, F Porikli
+            <br>
+            <em>ICLR Workshop on Science for Deep Learning (Sci4DL)</em>, 2026
+            <br>
+            <em>ICLR Workshop on Delta</em>, 2026
+            <br>
+            <a href="https://arxiv.org/abs/2603.07475">Paper</a>
+            <p></p>
+            <p>Investigates the representation structure of diffusion vs. autoregressive LLMs and how layer-skipping at inference time can be leveraged to <strong>accelerate generation without sacrificing output quality</strong>.</p>
+          </div>
+        </div>
+        <div class="flex-container">
+          <div style="padding:20px;flex:1;vertical-align:middle">
+            <div class="one"><img src="images/raghavv/Spiffy.png" width="160" class="hoverZoomLink"></div>
+          </div>
+          <div style="padding:20px;flex:3;vertical-align:middle">
+            <papertitle>Spiffy: Multiplying Diffusion LLM Acceleration via Lossless Speculative Decoding</papertitle>
+            <br>
+            S Agrawal, R Garrepalli, <strong><i>R Goel</i></strong>, M Lee, C Lott, F Porikli
+            <br>
+            <em>arXiv preprint</em>, 2025
+            <br>
+            <a href="https://arxiv.org/abs/2509.18085">Paper</a>
+            <p></p>
+            <p>Adapts speculative decoding to diffusion-based language models, achieving <strong>lossless acceleration</strong> by exploiting the iterative denoising structure of diffusion LLMs to propose and verify token blocks efficiently.</p>
+          </div>
+        </div>
+
+        <div id="robotics" class="section-anchor" style="padding:20px;width:100%;vertical-align:middle">
           <heading class="underline">Robotics, Control Theory and Multi-Agent Systems</heading>
         </div>
         <div class="flex-container">
@@ -285,9 +363,6 @@
         <div class="flex-container">
           <div style="padding:20px;flex:1;vertical-align:middle">
             <div class="one">
-              <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/raghavv/RISS.wmv" type="video/wmv">
-              </video></div>
               <img src='images/raghavv/RISS_pic.png' width="160">
             </div>
           </div>
@@ -306,54 +381,54 @@
           </div>
         </div>                                        
       </div>
+      <div id="patents" class="section-anchor">
+        <div style="padding:20px;width:100%;vertical-align:middle">
+          <heading class="underline">Patents</heading>
+        </div>
+        <div style="padding:0 20px 12px 20px;">
+          <strong>Efficient machine learning caching via attention output-based token eviction</strong><br>
+          R Goel, M Gagrani, J Park, D Jones, M Lee, W Jeon et al.<br>
+          <em>US Patent 12,579,063</em>, 2026
+        </div>
+        <div style="padding:0 20px 12px 20px;">
+          <strong>Self-speculative decoding using forecasted embeddings in autoregressive generative artificial intelligence models</strong><br>
+          M Lee, R Goel<br>
+          <em>US Patent App. 18/985,889</em>, 2026
+        </div>
+        <div style="padding:0 20px 12px 20px;">
+          <strong>Adaptive length speculative decoding in autoregressive generative artificial intelligence models</strong><br>
+          R Goel, M Lee<br>
+          <em>US Patent App. 18/423,840</em>, 2025
+        </div>
+      </div>
       <div>
         <p>The website style is from <a href="https://jonbarron.info/">here</a></p>
       </div>
     </div>
   </div>
+  <script>
+    function loadJSON(url, cb) {
+      fetch(url).then(function(r) { return r.json(); }).then(cb).catch(function(e) { console.error('Failed to load ' + url, e); });
+    }
+    loadJSON('data/updates.json', function(updates) {
+      var list = document.getElementById('updates-list');
+      updates.forEach(function(u) {
+        var li = document.createElement('li');
+        li.style.marginBottom = '4px';
+        li.innerHTML = '<strong>' + u.date + '</strong> &mdash; ' + (u.link ? '<a href="' + u.link + '">' + u.text + '</a>' : u.text);
+        list.appendChild(li);
+      });
+    });
+    loadJSON('data/thoughts.json', function(thoughts) {
+      var container = document.getElementById('thoughts-list');
+      thoughts.forEach(function(t) {
+        var div = document.createElement('div');
+        div.style.marginBottom = '12px';
+        div.innerHTML = '<strong>' + t.topic + '</strong><p style="margin:4px 0 0 0;">' + t.body + '</p>';
+        container.appendChild(div);
+      });
+    });
+  </script>
 </body>
 </html>
-<!--                       
-          <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()",bgcolor="#ffffd0">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
-                  <source src="images/raghavv/RISS.wmv" type="video/wmv">
-                  Your browser does not support the video tag.
-                </video></div>
-                <img src='images/raghavv/RISS_pic.png' width="160">
-              </div>
-            </td>
-            <script type="text/javascript">
-              function refnerf_start() {
-                document.getElementById('refnerf_image').style.opacity = "1";
-              }
-              
-              function refnerf_stop() {
-                document.getElementById('refnerf_image').style.opacity = "0";
-              }
-              refnerf_stop()
-            </script>            
-            <td style="padding:20px;width:75%;vertical-align:middle">
-                <papertitle>Dynamic Task Allocation Using Multi-Agent Mobile Robots</papertitle>
-                <br>
-                <strong><i>Raghavv Goel</i></strong>, Sha Yi, Jaskaran Singh Grover, Katia Sycara
-                <br>
-                <em>RISS Journal</em>, 2019 &nbsp               
-                <br>
-                <a href="https://riss.ri.cmu.edu/wp-content/uploads/2019/08/2019-RISS-poster-GOEL-Raghavv-SYCARA.pdf">poster</a>
-                /
-                <a href="https://drive.google.com/file/d/1jOYnLJ6iQ3FwXyB4NeBA4peV5JxPTVWk/view">video</a>
-                <p></p>
-                <p>We propose to solve task allocation problem in heterogeneous agents using mix integer optimization with collision avoidance and communication breakage constraints</p>
-              </td>
-            </tr>
-                      
-          </tbody></table>
-          <table><p>The website style is from <a href="https://jonbarron.info/">here</a></p>	</table>
-        </td>
-    </tr>
-  </table>
-</body>
-
 </html> -->
