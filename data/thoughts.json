@@ -1,5 +1,9 @@
 [
   {
+    "topic": "Simple ideas for speculative decoding",
+    "body": "A recurring theme in our speculative decoding work is that surprisingly simple interventions — vocabulary pruning, embedding-space probing, future contemplation — can yield significant inference speedups without complex training or architectural changes. I believe there is still a lot of low-hanging fruit in this space, and that principled analysis of why these simple methods work is as valuable as the speedups themselves."
+  },
+  {
     "topic": "Control theory and RL as lenses for understanding LLMs",
     "body": "I am keen on exploring the application of control theory (focusing on stability and optimality guarantees) and reinforcement learning (data-driven methods) to enhance our understanding of large language models. While my current research is dedicated to LLMs, I maintain a strong interest in robotics and stay updated on the latest advancements in the field. Please feel free to reach out if you are interested in collaborating."
   },
@@ -12,3 +16,4 @@
     "body": "Vision-Language-Action models are increasingly capable at high-level task planning, but they largely sidestep the guarantees that classical trajectory optimization and adaptive control provide — stability, constraint satisfaction, robustness to parametric uncertainty. I'm interested in how these two worlds can be combined: using VLAs to specify goals and priors while letting principled control methods handle execution, especially in settings with dynamic or partially unknown environments."
   }
 ]
+
