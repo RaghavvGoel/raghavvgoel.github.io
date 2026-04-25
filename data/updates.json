@@ -1,7 +1,11 @@
 [
   {
     "date": "Apr 2026",
-    "text": "New preprint: Skip to the Good Part — layer skipping in diffusion vs. autoregressive LLMs",
+    "text": "3 papers accepted at ICLR 2026 workshops: ConFu (lossless inference acceleration), CAOTE (budgeted KV cache / token eviction), and Skip to the Good Part (representation analysis in dLLMs vs. AR models)"
+  },
+  {
+    "date": "Apr 2026",
+    "text": "New preprint: Skip to the Good Part — representation structure analysis &amp; layer skipping in diffusion vs. autoregressive LLMs",
     "link": "https://arxiv.org/abs/2603.07475"
   },
   {
@@ -18,6 +22,11 @@
     "date": "Sep 2025",
     "text": "New preprint: Spiffy — Multiplying diffusion LLM acceleration via lossless speculative decoding",
     "link": "https://arxiv.org/abs/2509.18085"
+  },
+  {
+    "date": "Dec 2025",
+    "text": "Presenting KeyDiff at NeurIPS 2025, San Diego",
+    "link": "https://arxiv.org/abs/2504.15364"
   },
   {
     "date": "Jul 2025",
