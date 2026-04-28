@@ -1,20 +1,20 @@
 [
   {
     "date": "Apr 2026",
-    "text": "3 papers accepted at ICLR 2026 workshops: ConFu (lossless inference acceleration), CAOTE (budgeted KV cache / token eviction), and Skip to the Good Part (representation analysis in dLLMs vs. AR models)"
+    "text": "3 papers accepted at ICLR 2026 workshops: ConFu (lossless inference acceleration), CAOTE (budgeted KV cache / token eviction), and AR vs. dLLM representational capacity analysis"
   },
   {
-    "date": "Apr 2026",
-    "text": "New preprint: Skip to the Good Part — representation structure analysis &amp; layer skipping in diffusion vs. autoregressive LLMs",
+    "date": "Mar 2026",
+    "text": "New preprint: A Comparative Analysis of Layer-wise Representational Capacity in AR and Diffusion LLMs",
     "link": "https://arxiv.org/abs/2603.07475"
   },
   {
-    "date": "Apr 2026",
+    "date": "Mar 2026",
     "text": "New preprint: Efficient Training-Free Multi-Token Prediction via Embedding-Space Probing",
     "link": "https://arxiv.org/abs/2603.17942"
   },
   {
-    "date": "Apr 2026",
+    "date": "Mar 2026",
     "text": "New preprint: ConFu — Contemplate the Future for Better Speculative Sampling",
     "link": "https://arxiv.org/abs/2603.08899"
   },
