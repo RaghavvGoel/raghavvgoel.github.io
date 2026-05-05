@@ -1,5 +1,9 @@
 [
   {
+    "date": "May 2026",
+    "text": "2 papers accepted at ICML 2026: ConFu (speculative sampling) and Efficient Training-Free Multi-Token Prediction"
+  },
+  {
     "date": "Apr 2026",
     "text": "3 papers accepted at ICLR 2026 workshops: ConFu (lossless inference acceleration), CAOTE (budgeted KV cache / token eviction), and AR vs. dLLM representational capacity analysis"
   },
