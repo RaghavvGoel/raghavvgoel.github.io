@@ -4,8 +4,8 @@
     "body": "A recurring theme in our speculative decoding work is that surprisingly simple interventions — vocabulary pruning, embedding-space probing, future contemplation — can yield significant inference speedups without complex training or architectural changes. I believe there is still a lot of low-hanging fruit in this space, and that principled analysis of why these simple methods work is as valuable as the speedups themselves."
   },
   {
-    "topic": "Control theory and RL as lenses for understanding LLMs",
-    "body": "I am keen on exploring the application of control theory (focusing on stability and optimality guarantees) and reinforcement learning (data-driven methods) to enhance our understanding of large language models. While my current research is dedicated to LLMs, I maintain a strong interest in robotics and stay updated on the latest advancements in the field. Please feel free to reach out if you are interested in collaborating."
+    "topic": "Control theory as a lens for LLM training dynamics",
+    "body": "I've been thinking about the training dynamics of LLMs across pre-training, mid-training, and RLHF, and whether control theory offers a useful vocabulary for reasoning about them. If we can characterize these dynamics, can we use gradient-level probing to steer the model back when it drifts? A related idea: different layers may effectively operate at different 'frequencies,' so a single global learning rate seems crude &mdash; could per-layer update rates, chosen for stability and convergence, give smoother weight convergence, and are the right rates data-domain dependent?"
   },
   {
     "topic": "Diffusion LLMs and inference efficiency",
