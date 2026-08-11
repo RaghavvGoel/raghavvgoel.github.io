@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Project Ideas - Raghavv Goel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+</head>
+<body>
+  <div style="width:100%;max-width:800px;margin-right:auto;margin-left:auto;">
+    <div style="padding:0px">
+      <div style="padding:20px;width:100%;vertical-align:middle">
+        <p><a href="index.html">&larr; Back to home</a></p>
+        <heading>Project Ideas</heading>
+        <p>Ideas for useful public-good tools I've thought about but haven't built. If one of these resonates and you'd like to build it (or help), reach out: <a href="mailto:raghavsyz@gmail.com">raghavsyz@gmail.com</a>.</p>
+      </div>
+
+      <div style="padding:20px;width:100%;vertical-align:middle">
+        <heading class="underline">Garbage Dump Map of India</heading>
+
+        <p><strong>The idea</strong><br>
+        A map of India showing where garbage/waste is illegally dumped, crowdsourced and/or detected from imagery, so NGOs and local government can prioritize cleanup — with particular attention to tourist and heritage zones.</p>
+
+        <p><strong>Brainstorming notes</strong></p>
+        <p><em>Data sources</em><br>
+        Free satellite imagery (Sentinel-2, ~10m resolution; ISRO Bhuvan/Copernicus) is too coarse to spot street-level dump sites. Commercial high-resolution imagery (Planet Labs, Maxar, SkyWatch — roughly 0.3-3m resolution) would be needed for real detection; some offer academic/non-commercial tiers worth checking. Google Earth Engine API is useful for batch analytics over historical imagery.</p>
+
+        <p><em>Possible stack</em><br>
+        A computer vision model (YOLO or Segment Anything, fine-tuned on a dataset like TACO or custom-annotated satellite waste imagery) to detect dump sites → a Python backend (FastAPI/Flask) → PostGIS for geospatial storage and queries (e.g. "find all sites within 5km of a tourist landmark") → Mapbox GL JS or Leaflet.js for the map frontend.</p>
+
+        <p><em>Features worth considering</em><br>
+        Tourist-zone priority scoring, by overlaying detections with OpenStreetMap heritage/hotel data. Crowdsourced human-in-the-loop verification, where citizens or NGO volunteers confirm detections with a geotagged photo. Automated report/alert generation formatted for municipal bodies (e.g. MCD, BBMP).</p>
+
+        <p><em>Open question</em><br>
+        Whether to start with a simple crowdsourced manual-pin prototype first, or attempt satellite-based automatic detection from the start. No strong opinion yet — open to discussing with anyone interested in building this.</p>
+      </div>
+
+      <div style="padding:20px;width:100%;vertical-align:middle">
+        <heading class="underline">Industry–Academia Problem Marketplace</heading>
+
+        <p><strong>The idea</strong><br>
+        A platform where companies list real R&D problems/open questions they have, and researchers/professors (starting with IITs) can submit proposals or applications describing how their lab would approach it. Companies then choose which lab to collaborate with. The motivation is to increase student interest in non-CS fields by exposing them to real industry problem statements and collaborations, rather than only abstract coursework.</p>
+
+        <p><strong>Brainstorming notes</strong></p>
+        <p><em>Core flow</em><br>
+        Company posts a problem statement (scope, domain, constraints, what they're offering — funding, data, access, internships). Labs/professors browse and submit a proposal (approach, timeline, team). Company reviews proposals and selects a lab to collaborate with.</p>
+
+        <p><em>Open questions</em><br>
+        How to vet companies and problem statements so they're genuinely open (not just disguised outsourcing). How selection/matching should work — direct company choice vs. some lightweight review process. Whether to start narrow (one institute, one domain) before generalizing across IITs and disciplines. No strong opinion yet — open to discussing with anyone interested in building this.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
