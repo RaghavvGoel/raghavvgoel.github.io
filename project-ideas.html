@@ -49,6 +49,28 @@
         <p><em>Open questions</em><br>
         How to vet companies and problem statements so they're genuinely open (not just disguised outsourcing). How selection/matching should work — direct company choice vs. some lightweight review process. Whether to start narrow (one institute, one domain) before generalizing across IITs and disciplines. No strong opinion yet — open to discussing with anyone interested in building this.</p>
       </div>
+
+      <div style="padding:20px;width:100%;vertical-align:middle">
+        <heading class="underline">AI-Driven Flood Early-Warning System for Northeast India</heading>
+
+        <p><strong>The idea</strong><br>
+        Assam has seen severe recurring flooding (notably in 2026, across Upper Assam districts like Sivasagar, Charaideo, Jorhat, and Golaghat), affecting hundreds of thousands of people. A system combining satellite imagery, river gauge data, weather forecasts, and communications infrastructure could provide village-level flood forecasts and disaster planning — technology that could save lives directly in a region prone to monsoon flooding, cloudbursts, and Brahmaputra tributary overflow.</p>
+
+        <p><strong>Existing tools/inspiration</strong><br>
+        This space isn't empty — worth studying before building anything new:</p>
+        <ul style="padding-left:20px;">
+          <li><a href="https://sites.research.google/gr/floodforecasting/">Google Flood Hub</a> — free public riverine (7-day) and flash flood (24-hour) forecasts, using a global hydrology model plus an inundation model trained on weather data, river gauges, and satellite imagery; covers 150+ countries.</li>
+          <li><a href="https://www.floodbase.com/">Floodbase</a> (formerly Cloud to Street) — combines 17+ satellite sources with deep learning for near-real-time flood detection regardless of cloud cover; works with governments, humanitarian orgs (e.g. World Food Programme), and insurers.</li>
+          <li>India's Central Water Commission (CWC) flood forecasting network / India-WRIS — the existing official government system for Indian rivers; worth understanding as a baseline/potential data source rather than duplicating.</li>
+          <li>ISRO Bhuvan — India's national geoportal; worth checking for existing flood/hazard mapping layers and their coverage of Assam specifically.</li>
+        </ul>
+
+        <p><em>Possible angle</em><br>
+        Given the above, the highest-value contribution may not be a new global forecasting model (Google Flood Hub already does that reasonably well) but a last-mile layer specific to Northeast India: finer village-level resolution, integration with local communications infrastructure for actually reaching at-risk villages, and combining official CWC data with satellite-based verification.</p>
+
+        <p><em>Open questions</em><br>
+        Whether to build on top of/extend an existing system (e.g. contribute Northeast India coverage/data to Google Flood Hub) versus building an independent tool. How to handle last-mile alerting in areas with limited connectivity. No strong opinion yet — open to discussing with anyone interested, including on the AI/ML modeling side (remote sensing, flood forecasting) or the on-the-ground disaster response side.</p>
+      </div>
     </div>
   </div>
 </body>
