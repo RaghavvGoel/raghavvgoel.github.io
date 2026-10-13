@@ -47,7 +47,7 @@
         <a href="#llms">LLMs</a>
         <a href="#dllms">dLLMs</a>
         <a href="#robotics">Robotics</a>
-        <a href="#patents">Patents</a>
+        <!-- <a href="#patents">Patents</a> -->
       </nav>
       <div id="updates" class="section-anchor" style="width:100%;margin-right:auto;margin-left:auto;">
         <div style="padding:20px;width:100%;vertical-align:middle">
@@ -64,6 +64,22 @@
       <div id="llms" class="section-anchor" style="width:100%;margin-right:auto;margin-left:auto;">
         <div style="padding:20px;width:100%;vertical-align:middle">
           <heading class="underline">Efficient LLMs</heading>
+        </div>
+        <div class="flex-container">
+          <div style="padding:20px;flex:1;vertical-align:middle">
+            <div class="one"><img src="images/raghavv/activation-wave-cka.png" width="160" class="hoverZoomLink"></div>
+          </div>
+          <div style="padding:20px;flex:3;vertical-align:middle">
+            <papertitle>Surfing the Activation Wave: Analyzing the Information and Geometry of LLM Hidden States for Speculative Decoding</papertitle>
+            <br>
+            <strong><i>R Goel</i></strong>*, S Agrawal*, M Gagrani, R Garrepalli, M Lee
+            <br>
+            <em>NeurIPS Workshops (Axiom, GDDL, PriGM)</em>, 2026
+            <br>
+            <a href="https://arxiv.org/abs/2610.12939">Paper</a>
+            <p></p>
+            <p>Proposes a principled way to choose which decoder layers' hidden states to feed speculative decoding drafters, scoring layers by <strong>informativeness (matrix entropy)</strong> and <strong>diversity (centered kernel alignment)</strong> instead of fixed positional rules. The selected layer sets beat the default EAGLE3 choice and reveal distinct informational and geometric "compartments" in decoder representations.</p>
+          </div>
         </div>
         <div class="flex-container">
           <div style="padding:20px;flex:1;vertical-align:middle">
@@ -383,7 +399,7 @@
           </div>
         </div>                                        
       </div>
-      <div id="patents" class="section-anchor">
+      <!-- <div id="patents" class="section-anchor">
         <div style="padding:20px;width:100%;vertical-align:middle">
           <heading class="underline">Patents</heading>
         </div>
@@ -412,7 +428,7 @@
           R Goel, M Gagrani, W Jeon, M Lee, C Lott<br>
           <em>US Patent App. US 2025/0225374 A1</em>, 2025
         </div>
-      </div>
+      </div> -->
       <div>
         <p>The website style is from <a href="https://jonbarron.info/">here</a></p>
       </div>
@@ -427,7 +443,7 @@
       updates.forEach(function(u) {
         var li = document.createElement('li');
         li.style.marginBottom = '4px';
-        li.innerHTML = '<strong>' + u.date + '</strong> &mdash; ' + (u.link ? '<a href="' + u.link + '">' + u.text + '</a>' : u.text);
+        li.innerHTML = '<div style="display:flex;"><strong style="flex:0 0 6em;">' + u.date + '</strong><span>' + (u.link ? '<a href="' + u.link + '">' + u.text + '</a>' : u.text) + '</span></div>';
         list.appendChild(li);
       });
     });
